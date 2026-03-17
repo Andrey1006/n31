@@ -149,7 +149,12 @@ struct HomeView: View {
 
             VStack(spacing: 12) {
                 ForEach(recentPalettes) { palette in
-                    paletteCard(palette: palette)
+                    NavigationLink(destination: PaletteDetailView(paletteId: palette.id)
+                        .environment(\.showTabBar, showTabBar)
+                    ) {
+                        paletteCard(palette: palette)
+                    }
+                    .buttonStyle(.plain)
                 }
             }
             .padding(.horizontal, 24)
@@ -168,7 +173,12 @@ struct HomeView: View {
 
                     VStack(spacing: 12) {
                         ForEach(favoritesPalettes) { palette in
-                            paletteCard(palette: palette)
+                            NavigationLink(destination: PaletteDetailView(paletteId: palette.id)
+                                .environment(\.showTabBar, showTabBar)
+                            ) {
+                                paletteCard(palette: palette)
+                            }
+                            .buttonStyle(.plain)
                         }
                     }
                     .padding(.horizontal, 24)

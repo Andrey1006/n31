@@ -14,8 +14,12 @@ struct NotificationsView: View {
             header
             ScrollView(showsIndicators: false) {
                 VStack(spacing: 12) {
-                    ForEach(notificationsStore.items) { item in
-                        notificationCard(item: item)
+                    if notificationsStore.items.isEmpty {
+                        emptyState
+                    } else {
+                        ForEach(notificationsStore.items) { item in
+                            notificationCard(item: item)
+                        }
                     }
                 }
                 .padding(.horizontal, 24)
@@ -56,6 +60,24 @@ struct NotificationsView: View {
         .padding(.horizontal, 24)
         .padding(.vertical, 12)
         .background(background)
+    }
+
+    private var emptyState: some View {
+        VStack(spacing: 16) {
+            Image(systemName: "bell.slash")
+                .font(.system(size: 48))
+                .foregroundStyle(secondaryColor.opacity(0.6))
+            Text("No notifications yet")
+                .font(.interSemiBold(size: 18))
+                .foregroundStyle(titleColor)
+            Text("When you save or edit palettes, updates will appear here.")
+                .font(.interRegular(size: 14))
+                .foregroundStyle(secondaryColor)
+                .multilineTextAlignment(.center)
+                .padding(.horizontal, 32)
+        }
+        .frame(maxWidth: .infinity)
+        .padding(.top, 60)
     }
 
     private func notificationCard(item: NotificationDisplayItem) -> some View {

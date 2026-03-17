@@ -17,7 +17,9 @@ struct MainTabView: View {
                 case 2:
                     CaptureView()
                 case 3:
-                    LibraryView()
+                    NavigationStack {
+                        LibraryView()
+                    }
                 case 4:
                     ProfileView()
                 default:

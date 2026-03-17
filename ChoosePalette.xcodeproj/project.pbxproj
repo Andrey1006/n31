@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		27548AC02F69DAC40045B31A /* FirebaseFunctions in Frameworks */ = {isa = PBXBuildFile; productRef = 27548ABF2F69DAC40045B31A /* FirebaseFunctions */; };
+		27548AC22F69DAC40045B31A /* FirebaseRemoteConfig in Frameworks */ = {isa = PBXBuildFile; productRef = 27548AC12F69DAC40045B31A /* FirebaseRemoteConfig */; };
 		27FB98492F5504C4002DAEE8 /* FirebaseAuth in Frameworks */ = {isa = PBXBuildFile; productRef = 27FB98482F5504C4002DAEE8 /* FirebaseAuth */; };
 		27FB984B2F5504C4002DAEE8 /* FirebaseCore in Frameworks */ = {isa = PBXBuildFile; productRef = 27FB984A2F5504C4002DAEE8 /* FirebaseCore */; };
 		27FB984D2F5504C4002DAEE8 /* FirebaseFirestore in Frameworks */ = {isa = PBXBuildFile; productRef = 27FB984C2F5504C4002DAEE8 /* FirebaseFirestore */; };
@@ -45,6 +47,8 @@
 				27FB984B2F5504C4002DAEE8 /* FirebaseCore in Frameworks */,
 				27FB98492F5504C4002DAEE8 /* FirebaseAuth in Frameworks */,
 				27FB984D2F5504C4002DAEE8 /* FirebaseFirestore in Frameworks */,
+				27548AC02F69DAC40045B31A /* FirebaseFunctions in Frameworks */,
+				27548AC22F69DAC40045B31A /* FirebaseRemoteConfig in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -55,6 +59,7 @@
 			isa = PBXGroup;
 			children = (
 				27088DBE2F50974100BA794B /* ChoosePalette */,
+				27548ABE2F69DAC40045B31A /* Frameworks */,
 				27088DBD2F50974100BA794B /* Products */,
 			);
 			sourceTree = "<group>";
@@ -65,6 +70,13 @@
 				27088DBC2F50974100BA794B /* ChoosePalette.app */,
 			);
 			name = Products;
+			sourceTree = "<group>";
+		};
+		27548ABE2F69DAC40045B31A /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Frameworks;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -90,6 +102,8 @@
 				27FB98482F5504C4002DAEE8 /* FirebaseAuth */,
 				27FB984A2F5504C4002DAEE8 /* FirebaseCore */,
 				27FB984C2F5504C4002DAEE8 /* FirebaseFirestore */,
+				27548ABF2F69DAC40045B31A /* FirebaseFunctions */,
+				27548AC12F69DAC40045B31A /* FirebaseRemoteConfig */,
 			);
 			productName = ChoosePalette;
 			productReference = 27088DBC2F50974100BA794B /* ChoosePalette.app */;
@@ -176,7 +190,7 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				MARKETING_VERSION = 1.0;
+				MARKETING_VERSION = 1.1;
 				PRODUCT_BUNDLE_IDENTIFIER = com.cristopherjohnprice;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE_SPECIFIER = "";
@@ -217,7 +231,7 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				MARKETING_VERSION = 1.0;
+				MARKETING_VERSION = 1.1;
 				PRODUCT_BUNDLE_IDENTIFIER = com.cristopherjohnprice;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE_SPECIFIER = "";
@@ -389,6 +403,16 @@
 /* End XCRemoteSwiftPackageReference section */
 
 /* Begin XCSwiftPackageProductDependency section */
+		27548ABF2F69DAC40045B31A /* FirebaseFunctions */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 27FB98472F5504C4002DAEE8 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
+			productName = FirebaseFunctions;
+		};
+		27548AC12F69DAC40045B31A /* FirebaseRemoteConfig */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 27FB98472F5504C4002DAEE8 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
+			productName = FirebaseRemoteConfig;
+		};
 		27FB98482F5504C4002DAEE8 /* FirebaseAuth */ = {
 			isa = XCSwiftPackageProductDependency;
 			package = 27FB98472F5504C4002DAEE8 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;

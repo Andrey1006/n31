@@ -53,7 +53,12 @@ struct LibraryView: View {
             ScrollView(showsIndicators: false) {
                 VStack(spacing: 12) {
                     ForEach(displayedPalettes) { palette in
-                        libraryPaletteCard(palette: palette)
+                        NavigationLink(destination: PaletteDetailView(paletteId: palette.id)
+                            .environment(\.showTabBar, showTabBar)
+                        ) {
+                            libraryPaletteCard(palette: palette)
+                        }
+                        .buttonStyle(.plain)
                     }
                 }
                 .padding(.horizontal, 24)
