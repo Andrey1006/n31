@@ -9,6 +9,7 @@
 /* Begin PBXBuildFile section */
 		27548AC02F69DAC40045B31A /* FirebaseFunctions in Frameworks */ = {isa = PBXBuildFile; productRef = 27548ABF2F69DAC40045B31A /* FirebaseFunctions */; };
 		27548AC22F69DAC40045B31A /* FirebaseRemoteConfig in Frameworks */ = {isa = PBXBuildFile; productRef = 27548AC12F69DAC40045B31A /* FirebaseRemoteConfig */; };
+		27F1EAA72F71B68400E6DD0D /* FirebaseAnalytics in Frameworks */ = {isa = PBXBuildFile; productRef = 27F1EAA62F71B68400E6DD0D /* FirebaseAnalytics */; };
 		27FB98492F5504C4002DAEE8 /* FirebaseAuth in Frameworks */ = {isa = PBXBuildFile; productRef = 27FB98482F5504C4002DAEE8 /* FirebaseAuth */; };
 		27FB984B2F5504C4002DAEE8 /* FirebaseCore in Frameworks */ = {isa = PBXBuildFile; productRef = 27FB984A2F5504C4002DAEE8 /* FirebaseCore */; };
 		27FB984D2F5504C4002DAEE8 /* FirebaseFirestore in Frameworks */ = {isa = PBXBuildFile; productRef = 27FB984C2F5504C4002DAEE8 /* FirebaseFirestore */; };
@@ -46,6 +47,7 @@
 			files = (
 				27FB984B2F5504C4002DAEE8 /* FirebaseCore in Frameworks */,
 				27FB98492F5504C4002DAEE8 /* FirebaseAuth in Frameworks */,
+				27F1EAA72F71B68400E6DD0D /* FirebaseAnalytics in Frameworks */,
 				27FB984D2F5504C4002DAEE8 /* FirebaseFirestore in Frameworks */,
 				27548AC02F69DAC40045B31A /* FirebaseFunctions in Frameworks */,
 				27548AC22F69DAC40045B31A /* FirebaseRemoteConfig in Frameworks */,
@@ -104,6 +106,7 @@
 				27FB984C2F5504C4002DAEE8 /* FirebaseFirestore */,
 				27548ABF2F69DAC40045B31A /* FirebaseFunctions */,
 				27548AC12F69DAC40045B31A /* FirebaseRemoteConfig */,
+				27F1EAA62F71B68400E6DD0D /* FirebaseAnalytics */,
 			);
 			productName = ChoosePalette;
 			productReference = 27088DBC2F50974100BA794B /* ChoosePalette.app */;
@@ -177,7 +180,7 @@
 				DEVELOPMENT_TEAM = "";
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = ChoosePalette/Info.plist;
-				INFOPLIST_KEY_CFBundleDisplayName = "ColorWeave Creator";
+				INFOPLIST_KEY_CFBundleDisplayName = "ColorWeave: Road Creator";
 				INFOPLIST_KEY_NSCameraUsageDescription = "We use the camera to capture photos so you can pick colors and create palettes from real-world scenes.";
 				INFOPLIST_KEY_NSPhotoLibraryUsageDescription = "Access to your photo library allows you to select images and extract colors to build custom palettes.";
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
@@ -190,7 +193,7 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				MARKETING_VERSION = 1.1;
+				MARKETING_VERSION = 1.2;
 				PRODUCT_BUNDLE_IDENTIFIER = com.cristopherjohnprice;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE_SPECIFIER = "";
@@ -218,7 +221,7 @@
 				DEVELOPMENT_TEAM = "";
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = ChoosePalette/Info.plist;
-				INFOPLIST_KEY_CFBundleDisplayName = "ColorWeave Creator";
+				INFOPLIST_KEY_CFBundleDisplayName = "ColorWeave: Road Creator";
 				INFOPLIST_KEY_NSCameraUsageDescription = "We use the camera to capture photos so you can pick colors and create palettes from real-world scenes.";
 				INFOPLIST_KEY_NSPhotoLibraryUsageDescription = "Access to your photo library allows you to select images and extract colors to build custom palettes.";
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
@@ -231,7 +234,7 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				MARKETING_VERSION = 1.1;
+				MARKETING_VERSION = 1.2;
 				PRODUCT_BUNDLE_IDENTIFIER = com.cristopherjohnprice;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE_SPECIFIER = "";
@@ -412,6 +415,11 @@
 			isa = XCSwiftPackageProductDependency;
 			package = 27FB98472F5504C4002DAEE8 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
 			productName = FirebaseRemoteConfig;
+		};
+		27F1EAA62F71B68400E6DD0D /* FirebaseAnalytics */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 27FB98472F5504C4002DAEE8 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
+			productName = FirebaseAnalytics;
 		};
 		27FB98482F5504C4002DAEE8 /* FirebaseAuth */ = {
 			isa = XCSwiftPackageProductDependency;
